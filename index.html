@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
+
+    <script src="login.js"></script> <!--adds the login js file-->
     <link rel="stylesheet" href="main.css" /> <!--makes it so that main.css is actually being used-->
     <!-- Include bootstrap CSS framework -->
     <link
@@ -40,10 +42,10 @@
       <div>
         <h1>Welcome</h1>
         <p>Login to play</p>
-        <form method="get" action="play.html">
+        <div>
           <input type="text" id="name" placeholder="Your name here" />
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+          <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
+        </div>
       </div>
     </main>
 
